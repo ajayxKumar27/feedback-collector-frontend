@@ -52,7 +52,7 @@ const HomePage: React.FC = () => {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setisLoading(true);
-    if (!validateForm()) return;
+    if (!validateForm()) {setisLoading(false); return}
     try {
       const res = await fetch(api_url + '/api/forms', {
         method: 'POST',

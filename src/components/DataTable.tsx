@@ -17,14 +17,14 @@ interface DataTableProps {
 }
 
 const DataTable: React.FC<DataTableProps> = ({ data, loading, onEdit, onDelete }) => (
-    <div className="relative overflow-x-auto">
+    <div className="relative overflow-x-auto" style={{ maxHeight: '60vh' }}>
         {loading ? (
             <div className="flex justify-center items-center h-60">
                 <span className="inline-block w-12 h-12 border-4 border-blue-400 border-t-transparent rounded-full animate-spin"></span>
             </div>
         ) : (
             <table className="w-full text-sm text-left text-gray-700 bg-white rounded-xl shadow">
-                <thead className="text-xs uppercase bg-gray-100 text-gray-700">
+                <thead className="text-xs uppercase bg-gray-100 text-gray-700 sticky top-0 z-10">
                     <tr>
                         <th scope="col" className="px-6 py-3 rounded-s-lg">Name</th>
                         <th scope="col" className="px-6 py-3">Email</th>
