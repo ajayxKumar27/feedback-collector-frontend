@@ -1,0 +1,1 @@
+export const api_url = 'https://feedback-collector-backend-tumu.onrender.com'
