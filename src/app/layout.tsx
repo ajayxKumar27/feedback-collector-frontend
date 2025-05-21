@@ -32,7 +32,7 @@ export default function RootLayout({
       >
         <ToastContainer position="top-right" />
         <Navbar />
-        <div className="component-wrapper h-[calc(100vh-60px)] flex items-center justify-center bg-gradient-to-br from-blue-200 via-blue-300 to-purple-200">
+        <div className="component-wrapper min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-200 via-blue-300 to-purple-200 pt-15">
         {children}
         </div>
       </body>
